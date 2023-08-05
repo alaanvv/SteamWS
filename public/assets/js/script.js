@@ -15,11 +15,16 @@ form.onsubmit = e => {
   })
     .then(res => res.blob())
     .then(data => {
+      const file = new Blob([data], { type: 'application/octet-stream' })
+      
       const anchor = document.createElement('a')
-      anchor.href = window.URL.createObjectURL(data)
-
-      loading.style.display = 'none'
+      anchor.href = window.URL.createObjectURL(file)
+      anchor.download = 'steam-ws.zip'
+      
       anchor.click()
+      
       anchor.remove()
+      window.URL.revokeObjectURL(fileURL)
+      loading.style.display = 'none'
     })
 }
