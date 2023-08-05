@@ -9,7 +9,7 @@ form.onsubmit = e => {
 
   loading.style.display = 'inline'
 
-  fetch('http://localhost:666/file', {
+  fetch('/file', {
     method: 'POST',
     body: formData
   })
