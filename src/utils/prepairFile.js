@@ -1,10 +1,11 @@
 const fs = require('fs')
 const sharp = require('sharp')
+const path = require('path')
 
 sharp.cache({files: 0})
 
 module.exports = async fileName => {
-  const filesPath = `${process.cwd()}/src/files`
+  const filesPath = path.join(process.cwd(), '/src/files')
   const fileBaseName = fileName.split('.')[0]
   const fileFormat = fileName.slice(++fileBaseName.length)
 
