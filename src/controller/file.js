@@ -1,16 +1,16 @@
 const fs = require('fs')
 const Zipper = require('adm-zip')
 const prepairFile = require('../utils/prepairFile')
-const { resolve } = require('path')
+const { join } = require('path')
 
-const filesPath = resolve('../files')
+const filesPath = join(process.cwd(), 'src/files')
 
 const postFile = async (req, res) => {
   if (!req.file) return res.status(400).end()
 
   const fileFormat = req.file.originalname.split('.').pop()
   if (!['gif', 'png', 'jpg', 'jpeg'].includes(fileFormat)) res.status(400).end()
-
+  
   const fileName = Date.now()
   const filePath = `${filesPath}/${fileName}.${fileFormat}`
 
