@@ -6,7 +6,6 @@ sharp.cache({files: 0})
 
 module.exports = async fileName => {
   const filesPath = path.join(process.cwd(), '/src/files')
-  console.log(filesPath)
   const fileBaseName = fileName.split('.')[0]
   const fileFormat = fileName.slice(++fileBaseName.length)
 
