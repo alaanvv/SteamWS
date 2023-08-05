@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #171a21;
+
+
+  font-family: sans-serif;
+  color: #c7d5e0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 20px;
+  border-radius: 5px;
+
+  background-color: #1b2838;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input {
+  font-size: 1.5em;
+}
+
+.loading {
+  font-size: 1.2em;
+  color: #66c0f4;
+  text-align: center;
+}
