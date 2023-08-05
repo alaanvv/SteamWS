@@ -1,5 +1,5 @@
 {
-  "scripts": { "start": "node src/index.js" },
+  "scripts": { "start": "node ./src/index.js" },
   "dependencies": {
     "adm-zip": "^0.5.10",
     "cors": "^2.8.5",
