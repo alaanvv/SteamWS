@@ -1,6 +1,6 @@
-# SteamWS
-
 <div align='center'>
+  <h1> SteamWS </h1>
+  
   If you ever tried to <br>
   make your steam profile <br>
   prettier, I'm sure you <br>
