@@ -1,10 +1,11 @@
 <div align='center'>
-  <h1> SteamWS </h1>
   
-  If you ever tried to make your <br>
-  steam profile prettier, I'm sure <br>
-  you wondered adding those Workshop <br>
-  Showcase Gifs, and it's so f* hard to do <br>
+  # SteamWS
+  
+  If you ever tried to make your  
+  steam profile prettier, I'm sure  
+  you tried adding those Workshop  
+  Showcase Gifs, and realized they're so f* hard to do  
 
   <img width='50%' src='https://raw.githubusercontent.com/alaanvv/Image-Database/main/SteamWS/sws.png'>
 </div>
