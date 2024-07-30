@@ -14,9 +14,7 @@ body {
 
   width: 100vw;
   height: 100vh;
-
   background-color: #171a21;
-
 
   font-family: sans-serif;
   color: #c7d5e0;
@@ -24,24 +22,25 @@ body {
 }
 
 img {
+  width: 100%;
   text-align: center;
   margin-bottom: 10px;
 }
 
 a {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
   color: #c7d5e0;
 }
 
-.content {
+main {
   display: flex;
   flex-direction: column;
   gap: 20px;
 
-  padding: 20px;
+  max-width: 95%;
+  padding: 1.5em;
   border-radius: 5px;
 
   background-color: #1b2838;
@@ -57,8 +56,14 @@ input {
   font-size: 1.5em;
 }
 
-.loading {
-  font-size: 1.2em;
-  color: #66c0f4;
-  text-align: center;
+@media (max-width: 500px) {
+  body { font-size: 0.9em; }
+}
+
+@media (max-width: 450px) {
+  body { font-size: 0.8em; }
+}
+
+@media (max-width: 400px) {
+  body { font-size: 0.7em; }
 }
